@@ -1,5 +1,9 @@
 /* whole layout*/
-
+.col-md-4 > img {
+    width: 140px;
+    height: 140px;
+    
+}
 .row1 {
     display: flex; 
     height: 100vh; 
@@ -242,8 +246,3 @@ a:active {
     color:white;
 }
 
-.col-md-4 > img {
-    width: 140px;
-    height: 140px;
-    
-}
