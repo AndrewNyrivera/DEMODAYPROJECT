@@ -1,4 +1,9 @@
 /* whole layout*/
+body {
+    background-image:url("https://media1.giphy.com/media/rMhmB9uYPLWVi/giphy.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 .col-md-4 > img {
     width: 140px;
     height: 140px;
