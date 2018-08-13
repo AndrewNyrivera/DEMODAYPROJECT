@@ -133,6 +133,11 @@ to   { opacity: 1; }
    font-size: 30px;
 }
 
+#entery1{
+   font-family: 'Stalinist One', cursive;
+   font-size: 30px;
+}
+
 
 /* Home Page Header */
 .mdl-layout-title {
