@@ -1,5 +1,36 @@
 /* whole layout*/
+#c1,#c2,#c3 {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0px;
+}
+#c1 {
+    background-image: url('https://images.pexels.com/photos/326055/pexels-photo-326055.jpeg?cs=srgb&dl=light-landscape-nature-326055.jpg&fm=jpg');
+    background-size: cover;
+    padding: 0px;
+}
+#c2 {
+    background-image: url('http://bdfjade.com/data/out/102/6066356-wallpaper-image.jpeg');
+    background-size: cover;
+    padding: 0px;
 
+}
+#c3 {
+    background-image: url('https://static1.squarespace.com/static/55b27600e4b0670761e8d205/t/562d1f31e4b057e30c6dcd1e/1437772026818/6788251-fabric-wallpaper.jpg?format=1500w');
+    background-size: cover;
+    padding: 0px;
+}
+#color{
+    color:white;
+}
+#figcolor{
+    color:white;
+}
+.colors{
+    color:white;
+}
 .col-md-4 > img {
     width: 140px;
     height: 140px;
@@ -153,7 +184,7 @@ p2 {
 
 
 a:link {
-    color: rgb(135, 255, 105); 
+    color: rgb(121, 255, 88); 
     text-decoration: none;
 }
 
@@ -164,7 +195,7 @@ a:visited {
 }
 
 a:hover {
-    color: green;
+    color: rgb(0, 217, 255);
     background-color: transparent;
     text-decoration: greenyellow;
 }
