@@ -1,10 +1,166 @@
 /* whole layout*/
-#c1,#c2,#c3 {
+#white {background-image: url('http://7-themes.com/data_images/collection/8/4493158-hd-wallpapers-1080p.jpg');
+      background-size: cover;
+      
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+      
+}
+
+body,html{
+    height: 100%;
+    background-color: white;
+}
+
+/* remove outer padding */
+.main .row{
     padding: 0px;
+    margin: 0px;
+}
+
+/*Remove rounded coners*/
+
+nav.sidebar.navbar {
+    border-radius: 0px;
+}
+
+nav.sidebar, .main{
+    -webkit-transition: margin 200ms ease-out;
+    -moz-transition: margin 200ms ease-out;
+    -o-transition: margin 200ms ease-out;
+    transition: margin 200ms ease-out;
+}
+#navtransparent {
+    opacity: 0.8;
+}
+
+/* Add gap to nav and right windows.*/
+.main{
+    padding: 10px 10px 0 10px;
+}
+
+/* .....NavBar: Icon only with coloring/layout.....*/
+
+/*small/medium side display*/
+@media (min-width: 768px) {
+
+    /*Allow main to be next to Nav*/
+    .main{
+        position: absolute;
+        width: calc(100% - 40px); /*keeps 100% minus nav size*/
+        margin-left: 40px;
+        float: right;
+    }
+
+    /*lets nav bar to be showed on mouseover*/
+    nav.sidebar:hover + .main{
+        margin-left: 200px;
+    }
+
+    /*Center Brand*/
+    nav.sidebar.navbar.sidebar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
+        margin-left: 0px;
+    }
+    /*Center Brand*/
+    nav.sidebar .navbar-brand, nav.sidebar .navbar-header{
+        text-align: center;
+        width: 100%;
+        margin-left: 0px;
+    }
+
+    /*Center Icons*/
+    nav.sidebar a{
+        padding-right: 13px;
+    }
+
+    /*adds border top to first nav box */
+    nav.sidebar .navbar-nav > li:first-child{
+        border-top: 1px #e5e5e5 solid;
+    }
+
+    /*adds border to bottom nav boxes*/
+    nav.sidebar .navbar-nav > li{
+        border-bottom: 1px #e5e5e5 solid;
+    }
+
+    /* Colors/style dropdown box*/
+    nav.sidebar .navbar-nav .open .dropdown-menu {
+        position: static;
+        float: none;
+        width: auto;
+        margin-top: 0;
+        background-color: transparent;
+        border: 0;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+    }
+
+    /*allows nav box to use 100% width*/
+    nav.sidebar .navbar-collapse, nav.sidebar .container-fluid{
+        padding: 0 0px 0 0px;
+    }
+
+    /*colors dropdown box text */
+    .navbar-inverse .navbar-nav .open .dropdown-menu>li>a {
+        color: #777;
+    }
+
+    /*gives sidebar width/height*/
+    nav.sidebar{
+        width: 200px;
+        height: 100%;
+        margin-left: -160px;
+        float: left;
+        z-index: 8000;
+        margin-bottom: 0px;
+    }
+
+    /*give sidebar 100% width;*/
+    nav.sidebar li {
+        width: 100%;
+    }
+
+    /* Move nav to full on mouse over*/
+    nav.sidebar:hover{
+        margin-left: 0px;
+    }
+    /*for hiden things when navbar hidden*/
+    .forAnimate{
+        opacity: 0;
+    }
+}
+
+
+
+#c1,#c2,#c3,.img3, #navimg,.spacing,#cards1,#background{
+    background-attachment: fixed !important;
+    background-position: center !important;    
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+}
+#background {
+    background-image: url('http://7-themes.com/data_images/collection/8/4493158-hd-wallpapers-1080p.jpg') !important;
+    background-size: cover !important;
+}
+#cards1 {
+    background-image: url('http://7-themes.com/data_images/collection/8/4493158-hd-wallpapers-1080p.jpg')!important;
+    background-size: cover!important;
+    margin: 0px !important;
+    padding: 0px !important;
+}
+.spacing{
+    background-image: url('https://wallpaperbrowse.com/media/images/soap-bubble-1958650_960_720.jpg');
+    background-size: cover;
+    
+}
+
+navimg {
+    background-image: url('https://images.pexels.com/photos/326055/pexels-photo-326055.jpeg?cs=srgb&dl=light-landscape-nature-326055.jpg&fm=jpg');
+    background-size: cover;
+   margin-top: 100px;
+   margin-bottom: 100px;
 }
 #c1 {
     background-image: url('https://images.pexels.com/photos/326055/pexels-photo-326055.jpeg?cs=srgb&dl=light-landscape-nature-326055.jpg&fm=jpg');
@@ -16,6 +172,12 @@
     background-size: cover;
     padding: 0px;
 
+}
+.img3{
+background-image: url('http://images.panda.org/assets/images/pages/welcome/orangutan_1600x1000_279157.jpg');
+background-size: cover;
+padding: 0px;
+height: 100%;
 }
 #c3 {
     background-image: url('https://static1.squarespace.com/static/55b27600e4b0670761e8d205/t/562d1f31e4b057e30c6dcd1e/1437772026818/6788251-fabric-wallpaper.jpg?format=1500w');
@@ -278,3 +440,12 @@ a:active {
     color:white;
 }
 
+#cards{ 
+    display:flex;
+    margin-left: 250px;
+    margin-right: 250px;
+}
+#padding {
+    margin-left: 100px;
+    margin-right: 100px;
+}
